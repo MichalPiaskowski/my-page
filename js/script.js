@@ -131,7 +131,7 @@ $(function(){
 			
 			$.ajax({
 			
-				url: 'mail.php',
+				url: 'https://formspree.io/mich.piaskowski@gmail.com',
 				type: 'post',
 				data: $this.serialize(),
 				success: function(data){
