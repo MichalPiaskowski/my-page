@@ -547,13 +547,13 @@ body.section-show .transition-mask:before {
 }
 
 .front-person-img>img {
-	max-width: 100%;
+	max-width: 120%;
 	vertical-align: bottom;
-	-webkit-transform: rotate(-45deg) translateY(40px);
-	-moz-transform: rotate(-45deg) translateY(40px);
-	-ms-transform: rotate(-45deg) translateY(40px);
-	-o-transform: rotate(-45deg) translateY(40px);
-	transform: rotate(-45deg) translateY(40px);
+	-webkit-transform: rotate(-45deg) translate(-10px, -20px);
+	-moz-transform: rotate(-45deg) translate(-10px, -20px);
+	-ms-transform: rotate(-45deg) translate(-10px, -20px);
+	-o-transform: rotate(-45deg) translate(-10px, -20px);
+	transform: rotate(-45deg) translate(-10px, -20px);
 }
 
 .front-person-titles {
@@ -633,7 +633,7 @@ body.section-show .transition-mask:before {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	margin-left: -15px;
+	margin-left: 5px;
 }
 
 .front-person-links>ul>li>a {
@@ -718,7 +718,20 @@ body.section-show .transition-mask:before {
 }
 
 .about-person-img {
+	padding-top: 34px;
 	text-align: center;
+}
+
+@media (max-width: 1200px) {
+	.about-person-img {
+		padding-top: calc((419px - 293px)/2);
+	}
+}
+
+@media (max-width: 992px) {
+	.about-person-img {
+		padding-top: 0;
+	}
 }
 
 .about-person-img>img {
@@ -746,7 +759,7 @@ body.section-show .transition-mask:before {
 }
 
 .info-list>li {
-	padding-right: 50px;
+	padding-right: 40px;
 	float: left;
 	min-width: 5%;
 }
@@ -2081,11 +2094,11 @@ body .symp-btn {
 	}
 
 	.front-person-img>img {
-		-webkit-transform: rotate(-45deg) translateY(45px);
-		-moz-transform: rotate(-45deg) translateY(45px);
-		-ms-transform: rotate(-45deg) translateY(45px);
-		-o-transform: rotate(-45deg) translateY(45px);
-		transform: rotate(-45deg) translateY(45px);
+		-webkit-transform: rotate(-45deg) translate(-10px, -10px);
+		-moz-transform: rotate(-45deg) translate(-10px, -10px);
+		-ms-transform: rotate(-45deg) translate(-10px, -10px);
+		-o-transform: rotate(-45deg) translate(-10px, -10px);
+		transform: rotate(-45deg) translate(-10px, -10px);
 	}
 
 	.front-person-links {
@@ -2195,13 +2208,12 @@ body .symp-btn {
 	}
 
 	.front-person-img>img {
-		-webkit-transform: rotate(-45deg) translateY(45px);
-		-moz-transform: rotate(-45deg) translateY(45px);
-		-ms-transform: rotate(-45deg) translateY(45px);
-		-o-transform: rotate(-45deg) translateY(45px);
-		transform: rotate(-45deg) translateY(100px);
+		-webkit-transform: rotate(-45deg) translate(-13%, 12%);
+		-moz-transform: rotate(-45deg) translate(-13%, 12%);
+		-ms-transform: rotate(-45deg) translate(-13%, 12%);
+		-o-transform: rotate(-45deg) translate(-13%, 12%);
+		transform: rotate(-45deg) translate(-13%, 12%);
 		position: absolute;
 		bottom: 0;
-		left: -40px;
 	}
 }
